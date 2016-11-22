@@ -1,0 +1,152 @@
+############################################################################
+#                   Security Darkers                                       #
+#                     Darkers Zine                                         #
+#Membros:_Dr4k0_,Storm,gbr,nibbles,OnlyOne,Sthealt,Dark_Side,Fylhoth,rog   #
+#Autor: Fylhoth                                                            #
+#Contato: wWw.darkers.com.br/smf                                           #
+#                                                                          #
+#                                                                          #
+############################################################################
+
+
+
+				+---------+
+				|Segurança|
+				+---------+
+
+Segurança é uma assunto diario no qual vivemos todos dias se trata de opção.
+A Segurança em si não é um assunto fácil de se tratar sendo que ficar seguro 
+é praticamente impossivel pois o Security Officer tem que descobrir todas as 
+falhas e corrigilas ja o hacker
+tem apenas de encontra uma brecha para poder invadir a rede; das brechas que 
+o hacker tende a encontrar cito 3.
+
+1- Trojans instalado no micro.
+2- Bugs no Sistema e programas
+3- Descuido e ingenuidade do usuário.
+
+Trojans de Conexão
+
+Trojans não bastam de programas que após instalados transformam seu 
+computador em um servidor assim qualquer pessoa que possuir o cliente pode 
+acessa - lo de qualquer canto da terra. Apos instalados estes programas 
+ficam quase invisíveis assim dificultando sua identificação. Mas de lembre 
+se que ele precisa ser instalado. Ninguém é contaminado por um netbus de 
+graça, sempre a contaminação existe a algum descuido.
+
+Podendo ser por Engenharia Social "Seing: Ato de enganar para obter 
+informações."
+Os trojans ao contrario de que muita gente pensa é usado e muito, "Qualquer 
+antivirus é capas de detecta-los." Não cai nesta pois existem programas como 
+o Petite ( http://www.un4seen.com/petite ), Que se denomina comprensor de 
+executaveis ou seja ele comprime o arquivo executavel assim modificando a 
+sua estrutura consequentemente o antivirus não encherga mais aquele arquivo 
+como uma ameaça. Os usuarios: podemos ver que em Fortaleza Digital 
+Strathmore um comandante temivel por todos caiu em uma Engenharia Social de 
+Tankado no qual usava da Seing para poder destruir a NSA a organização que 
+acabou com a vida dele e de seus familiares. Tankado usou uma Seing simples 
+fez uma conta de e-mail em uma universidade dos E.U.A e começou a enviar de 
+seu e-mail correspondencias para o outro email no qual dizia que havia feito 
+uma chave de criptografia que poderia acabar com as investigações da NSA. 
+Mas na verdade a chave nunca existiu o que tankado fez foi um virus de 
+computador para destruir a NSA e quase consegue Strathmore colocou no 
+TRANSLTR a chave de tankado assim pensando que iria conseguir reverter a 
+criptografia feita por Tankado, Strathmore foi obrigado a desativar os 
+antivirus e quando o fez era tarde demais o virus havia começado a acabar 
+com os firewalls, assim a NSA seria exposta para o mundo todo. Strathmore 
+teve sorte pois sua equipe de genios malucos conseguiu achar orfaos no 
+programa que dizia a chave de como quebrar o virus. E você e sua compania 
+também possuem uma equipe de genios. Creio que não pois as empresas hoje em 
+dia economizam muito com segurança e acabam sendo derrubadas por garotos de 
+12 e  15 anos os chamados script kiddes.
+
+Bugs
+
+Bugs já é uma coisa que sempre existiu e sempre existira. Pois as empresas 
+de softwares buscam lucros e não visam a segurança em software, um exemplo 
+disto é que mesmo que o software possua erros e vunerabilidades. Os bugs é 
+um problema facil de se resolver pois na maioria das vezes quem os descobre 
+são os proprios fabricantes assim podemos baixar atualizações para estes 
+erros deste modo corrigimos os bugs. Estas atualizações (patch) podem ser 
+baixadas nos sites dos fabricantes.
+
+
+Descuido e ingenuidade do Usuario
+
+Leia as apostilas da NIC BR Security Office
+
+Cartilha de Segurança para a Internet
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-01-conceitos.pdf
+Parte I: Conceitos de Segurança Esta parte da Cartilha apresenta conceitos 
+de segurança de computadores, onde são abordados
+temas relacionados às senhas, certificados digitais, engenharia social, 
+vírus e worm, vulnerabilidade,
+backdoor, cavalo de tróia e ataques de negação de serviço. Os conceitos aqui 
+apresentados
+são importantes para o entendimento de partes subseqüentes desta Cartilha.
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-02-prevecao.pdf
+Parte II: Riscos Envolvidos no Uso da Internet e Métodos de Prevenção
+Esta parte da Cartilha aborda diversos riscos envolvidos no uso da Internet 
+e seus métodos de
+prevenção. São discutidos os programas que possibilitam aumentar a segurança 
+de um computador,
+como antivírus e firewalls, e apresentados riscos e medidas preventivas no 
+uso de programas
+de e-mail, de troca de mensagens, de distribuião de arquivos, browsers e 
+recursos de compartilhamento
+de arquivos. Também é discutida a importância da realização de cópias de 
+segurança.
+Algumas seções aqui apresentadas necessitam do entendimento de conceitos 
+discutidos na parte I
+desta Cartilha
+(http://www.nbso.nic.br/docs/cartilha/cartilha-01-conceitos.pdf Conceitos de 
+Segurança).
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-03-privacidade.pdf
+Parte III: Privacidade
+Esta parte da Cartilha discute questões relacionadas à privacidade do 
+usuário ao utilizar a Internet.
+É apresentado o conceito de criptografia, onde são discutidos os métodos de 
+criptografia
+por chaves únicas, por chaves pública e privada e as assinaturas digitais. 
+Também são abordados temas relacionados à privacidade dos e-mails, a 
+privacidade no acesso e disponibilizção de páginas Web, bem como alguns 
+cuidados que o usuário deve ter com seus dados pessoais e ao armazenar dados 
+em um disco rígido.
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-04-fraudes.pdf
+Parte IV: Fraudes na Internet
+Esta parte da cartilha aborda questões relacionadas à fraudes na Internet. 
+São apresentadas
+algumas maneiras de prevenção contra ataques de engenharia social, situaões 
+envolvendo fraudes
+comerciais e bancárias via Internet, bem como medidas preventivas que um 
+usuário deve adotar
+ao acessar sites de comércio eletrônico ou Internet Banking. Também é 
+apresentado o conceito
+de boato (hoax) e são discutidas algumas implicações de segurança e formas 
+para se evitar sua
+distribuição.
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-05-banda-larga-wireless.pdf
+Parte V: Redes de Banda Larga e Redes Sem Fio (Wireless)
+Esta parte da Cartilha discute implicações de segurança peculiares aos 
+serviços de banda larga e wireless. Também apresenta algumas recomendações 
+para que usuários destes serviços possam utilizá-los de forma mais segura.
+
+http://www.nbso.nic.br/docs/cartilha/cartilha-06-spam.pdf Parte VI: SPAM 
+Esta parte da Cartilha aborda o conceito de SPAM e os problemas que ele pode 
+acarretar
+para usuários, provedores e empresas. Também são citadas técnicas de 
+filtragem que podem ser
+utilizadas por usuários para tentar bloquear o recebimento de SPAMs.
+
+www.nbso.nic.br/docs/cartilha/cartilha-07-incidentes.pdf
+Parte VII: Incidentes de Seguranc¸a e Uso Abusivo da Rede Esta parte da 
+Cartilha aborda tópicos relativos a incidentes de segurança e uso abusivo da 
+rede. São discutidos os conceitos de política de segurança, política de uso 
+aceitável, registros de eventos e sistemas de detecção de intrusão. Também 
+são discutidos os procedimentos relativos ao processo de identificação e 
+notificações de incidentes de segurança.
