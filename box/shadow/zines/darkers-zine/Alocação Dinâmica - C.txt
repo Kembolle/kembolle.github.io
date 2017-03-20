@@ -1,0 +1,433 @@
+############################################################################
+#                   Security Darkers                                       #
+#                     Darkers Zine                                         #
+#Membros:_Dr4k0_,Storm,gbr,nibbles,OnlyOne,Sthealt,Dark_Side,Fylhoth,rog   #
+#Autor: Dark_Side                                                          #
+#Contato: wWw.darkers.com.br/smf                                           #
+#                                                                          #
+#                                                                          #
+############################################################################
+
+                           Alocação Dinâmica - C 
+
+1.  Introdução
+2.  Variáveis e arrays
+3.  Alocação Dinâmica
+4.  Função malloc()
+5.  Função calloc()
+6.  Função realloc()
+7.  Função free()
+9.  Finalizando
+
+===================================================================================
+                                 Introdução
+===================================================================================
+
+Quando declaramos uma variável, esta ocupa um determinando espaço na memória.
+Em situação normal, este espaço ocupado é fixo, isto é, permanece inalterado
+durante a execução de todo o programa. É possível, entretanto, alocar o espaço
+utilizado pela variável dinamicamente. Em outras palavras, você pode alterar
+o espaço que uma variável ocupa na memória em qualquer parte do código,
+em tempo de execução.
+
+O que isso traz de vantagens? 
+Pois bem, para responder essa pergunta, tomemos a seguinte situação:
+
+Sabemos que uma função retorna de 1 a 30 caracteres, e os escreve em um buffer.
+
+Poderíamos então fazer:
+
+char buffer[30];
+
+Desta maneira, se o programa retornasse 10, 14, 15, 19, 23 ou 30 caracteres,
+o buffer seria suficientemente grande para comportá-los. Se o programa retornar
+apenas 1 caractere, temos mais 29 bytes (1 caractere = char = 1 byte) livres.
+
+Observamos acima, um disperdício de memória. O uso de alocação dinâmica é muito 
+difundido quando não sabemos ao certo, a quantidade de memória que uma 
+variável precisa.
+
+===================================================================================
+                                 Variáveis e Arrays
+===================================================================================
+
+Considerando um sistema de 32 bits:
+
+int x = 0;
+
+Nesse sistema, a variável do tipo INT possui 4 bytes - tamanho que ela ocupa
+na memória.
+
+char x = 'A';
+
+Variáveis do tipo CHAR ocupam 1 byte de espaço.
+
+
+double x = 10.45
+
+No caso acima, temos 8 bytes sendo ocupados.
+
+char lolz[100];
+
+Temos agora um exemplo de um array de chars. Como sabemos, 1 char ocupa 1 byte,
+se temos 100 deles, temos 100 bytes ocupados.
+
+char hi[10][50];
+
+Um exemplo de array bidimensional ou matriz.
+Temos agora 500 bytes ocupados (10 * 50 * 1; 1 = byte ocupado por 1 CHAR) .
+
+int novolol[5][10][20].
+Temos 5 * 10 * 20 * 4 = 4000 bytes; 4 = bytes ocupados por 1 INT.
+
+A breve explicação acima serve apenas para base ;).
+
+===================================================================================
+                                 Alocação Dinâmica
+===================================================================================
+ 
+Como já sabemos, podemos alocar dinamicamente um espaço na memória, que será
+utilizado por variáveis. Ainda referindo-se à memória, o espaço utilizado na
+alocação é oriundo do que chamamos de HEAP. O HEAP nada mais é que a 
+parte de memória livre do computador.
+
+Na linguagem C, temos 4 funções destinadas à alocação dinâmica:
+
+malloc() => utilizada para alocar memória;
+calloc() => utilizada também para alocar memória;
+realloc() => utilizada para realocar memória;
+free() => utilizada para liberar a memória previamente alocada.
+
+Todas as funções acima, estão defindas no header "stdlib.h".
+
+Veremos como utilizar essas funções a seguir.
+
+
+===================================================================================
+                                 Função malloc()
+===================================================================================
+
+Como já sabemos, utilizamos a função malloc() para alocarmos memória.
+
+Sintaxe:
+ 
+   void * malloc(size_t tamanho)
+ 
+ tamanho:
+      quantidade (em bytes) de memória a ser alocada;
+
+A função retorna um ponteiro do tipo VOID apontando para o primeiro byte 
+alocado.
+O tipo de dado VOID pode ser transformado em qualquer outro tipo, o que nos
+permite a alocar memória em qualquer tipo de variável.
+
+Exemplo:
+
+   #include <stdlib.h>
+
+   int main(){
+      // 1 char = 1 byte; 10 chars = 10 bytes
+      char * minha_var = (char*)malloc(10); 
+      free(minha_var); // Libera memória
+   return 0;
+   }
+
+Acima, alocamos 10 bytes no ponteiro. Em seguida, liberamos o espaço alocado.
+
+char * minha_var = (char*)malloc(10);
+
+Utilizamos (char*) para "transformar" o ponteiro do tipo VOID em CHAR, uma vez
+em que a variável em questão é deste tipo.
+
+Esse processo é denominado TYPECAST, que consiste em forçar que um tipo de
+dado seja interpretado como outro.
+
+Quando atribuímos ao ponteiro o valor de retorno da função malloc() sem
+utilizar TYPECAST, temos uma CONVERSÃO IMPLÍCITA, isto é, o compilador se 
+encube de converter os valores. De tal forma, poderíamos fazer também:
+
+char * minha_var = malloc(10);
+
+Quando alocamos um espaço, podemos utilizá-lo como um vetor (array).
+
+Exemplo:
+
+int * inteiro = (int*)malloc(sizeof(int) * 4);
+inteiro[0] = 10;
+inteiro[1] = 20;
+inteiro[2] = 30;
+inteiro[3] = 40;
+free(inteiro);
+
+Alocamos agora, o espaço necessário para 4 valores do tipo INT.
+
+Assim:
+
+int * inteiro = (int*)malloc(sizeof(int) * NUM);
+
+O vetor teria os índices de 0 a NUM-1.
+
+Exemplo 3:
+
+int * inteiro = (int*)malloc(sizeof(int) * 10);
+
+inteiro[0] = 10;
+...
+...
+...
+inteiro[9] = 90;
+
+
+
+Vejamos:
+
+ #include <stdio.h>
+   int main(){
+       int n=0,i=0;
+       int elementos[10];
+       
+      printf("Digite o numero de elementos:");
+      scanf("%d",&n);
+      for(i=0;i<n;i++)
+      elementos[i] = 0;
+     
+return 0;
+   }
+
+
+Pois bem, declaramos um array de inteiros com 10 possíveis valores.
+O programa recebe um número de elementos que serão inseridos no array,
+e preenche os respectivos elementos com "0".
+
+Temos dois problemas:
+1) Não sabemos o número de elementos que o usuário irá escolher;
+2) Caso o número seja maior do 10, o programa iria inserir elementos além da 
+capacidade do array, podendo causar travamentos.
+
+
+Uma maneira de solucionar ambos seria:
+
+#include <stdio.h>
+#include <stdlib.h>
+   int main(){
+       int n=0,i=0;
+       
+      printf("Digite o numero de elementos:");
+      scanf("%d",&n);
+      int  * elementos = (int*)malloc(sizeof(int) * n); // Aloca n * INT bytes
+      if(elementos == NULL) // Verifica por erro
+      {
+                   printf("Memoria insuficiente");
+                   return 1;
+                   }
+      for(i=0;i<n;i++)
+      elementos[i] = 0;
+     
+     free(elementos);
+return 0;
+   }
+
+
+Após recebermos a entrada do número de elementos, alocamos a memória necessária:
+
+int  * elementos = (int*)malloc(sizeof(int) * n);
+
+Voltando à parte de variáveis e arrays, vimos que em um sistema de 32 bits,
+a variável do tipo INT ocupa 4 bytes na memória. Como estamos alocando N números
+de elementos do tipo INT, a quantidade de memória necessária seria 4 * n.
+
+Por exemplo, se o usuário entrasse com o número 10, teríamos 10 x 4 = 40 bytes;
+ 
+O operador SIZEOF() retorna o tamanho de um tipo de variável.
+
+Exemplo: sizeof(double);
+O programa retornaria o tamanho em bytes que uma variável do tipo double ocupa.
+
+Portanto, no trecho acima, estaríamos alocando em um array, N elementos de tamanho
+sizeof(int).
+
+
+  if(elementos == NULL)
+      {
+                   printf("Memoria insuficiente");
+                   return 1;
+                   }
+
+
+Temos outro aspecto importante aqui. Sabemos que a memória é um recurso finito,
+isto é, pode esgotar. Caso não exista memória suficiente para alocarmos, a função
+malloc() retorna um ponteiro NULL.
+
+  free(elementos);
+
+Liberamos o espaço alocado.
+
+===================================================================================
+                                 Função calloc()
+===================================================================================
+
+
+Semelhante à função malloc().
+
+Sintaxe:
+
+  void * calloc(size_t num,size_t tam)
+
+ num:
+  número de elementos que serão alocados.
+ 
+ tam:
+  número em bytes de cada elemento.
+
+A função aloca NUM * TAM bytes de memória.
+Isso seria o mesmo que alocar NUM elementos de tamanho TAM cada um, em um array.
+
+É retornado um ponteiro para o primeiro byte alocado, em caso de êxito na alocação.
+Caso não haja memória suficiente para alocação, a função retorna um ponteiro NULL.
+
+Vejamos:
+
+    #include <stdlib.h>
+       int main(){
+           double * var = (double*)calloc(10,sizeof(double));
+           free(var); // Liberamos a memória alocada 
+       return 0;
+        }
+
+
+No caso acima, estaríamos alocando 10 * sizeof(double) em VAR.
+A partir daí, o ponteiro VAR poderia ser tratrado como um array de doubles,
+contendo 10 elementos.
+
+Exemplo:
+
+var[0]=10.2
+...
+...
+var[9]=122.33
+
+
+Considerando double = 8 bytes, a memória alocada seria de 10 * 8 = 80 bytes.
+O que seria: double var[10];
+
+Exemplo:
+
+     #include <stdio.h> // printf() e scanf() 
+     #include <stdlib.h>
+        int main(){
+            int * var = (int*)calloc(1,sizeof(int)); // Aloca 1 * INT
+            if(var == NULL) // Verifica por erro
+          {
+                  printf("Memoria insuficiente");
+                  return 1;
+          }
+            printf("Digite um numero:");
+            scanf("%d",&var);
+            printf("Numero digitado: %d",var);
+            free(var); // Libera memória
+         return 0;
+   }
+
+Alocamos uma quantidade de memória ocupada por 1 INT, com a função scanf(), 
+pedimos a entrada de um número que é armazenado na variável e em seguida,
+este número é mostrado com printf().
+
+
+===================================================================================
+                                 Função realloc()
+===================================================================================
+
+Utilizamos essa função para realocar memória. Pode-se dizer que estamos redimensionando
+um espaço alocado.
+
+Sintaxe:
+   
+    void * realloc(void *ptr,size_t tam)
+
+  ptr:
+    ponteiro que será realocado;
+  
+  tam:
+   nova quantidade de memória.
+
+Quando utilizamos a função realloc(), nenhum dado é perdido, isso pois a função
+copia o bloco de memória que existia anteriormente, antes de mover o bloco de memória.
+
+É importante visar que, só podemos utilizar a função realloc() com ponteiros que já
+foram previamente alocados.
+Podemos realocar um espaço maior ou menor do que o anterior.
+
+A função retorna um ponteiro para o bloco de memória antigo, em caso de êxito.
+Caso não haja memória suficiente, a função retorna um ponteiro NULO e a alocação
+anterior não é alterada.
+
+
+Exemplo:
+     #include <stdlib.h>
+     #include <stdio.h> // snprintf() e strncat() 
+        int main(){
+        char * str = (char*)malloc(10); // Alocamos 10 bytes
+        if(str == NULL)  // Verifica por erro
+        {
+               printf("Memoria insuficiente");
+               return 1;
+               }
+       snprintf(str,10,"Hello..."); // Escreve "Hello..." no ponteiro
+       printf("%s\n",str);
+       if((realloc(str,15)) == NULL){ // Realoca para 15 bytes, e verifica por erro
+               printf("Memoria insuficiente");
+               return 1;
+               }
+      strncat(str,"Bye!",4); // Concantenta "Bye!"                    
+       
+        printf("%s",str);
+        free(str); // Libera memória
+         return 0;
+   }
+
+
+
+Inicialmente alocamos 10 bytes no ponteiro. Escrevemos a string "Hello....", mostramos
+o valor na tela, realocamos 
+o ponteiro de 10 para 15 bytes, adicionamos a string "Bye!" no ponteiro, e em seguida,
+mostramos o valor na tela.
+
+ Resultado do programa:
+
+   Hello...
+   Hello...Bye!
+
+
+ 
+===================================================================================
+                                 Função free()
+===================================================================================
+ 
+Essa função, como já sabemos, é utilizada para liberarmos a memória alocada.
+Devemos utilizá-la apenas em ponteiros que foram previamente alocados.
+O uso da função com ponteiro que não foi alocado previamente, pode ocasionar
+em um travamento do computador.
+
+Sintaxe:
+ 
+  void free(void * ptr)
+ 
+   ptr: 
+     ponteiro que terá a memória liberada.
+
+Sempre quando alocamos memória em um ponteiro, devemos liberá-la quando
+não precisamos mais usar o ponteiro. 
+
+===================================================================================
+                                Finalizando
+===================================================================================
+
+
+Termino aqui este breve tutorial sobre alocação dinâmica em C.
+Espero que tenha ajudado em algo e que você tenha entendido a importância
+de utilizar a alocação dinâmica em diversas situações em um programa.
+No próximo módulo, veremos como utilizar alocação dinâmica na linguagem C++.
+
+Bye ;)
+
+Dark_Side
