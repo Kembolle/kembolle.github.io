@@ -107,4 +107,7 @@ a, a:hover {
 	font-size: 60px;
 	line-height: 70px;
 }
+audio {
+    background-color: #000000FF;
+}
 }

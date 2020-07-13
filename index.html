@@ -38,44 +38,39 @@ contato[at]kembolle[dot]com.br
 <!-- Metatags --> 
 <!-- stylesheet --> 
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
-<link href="wimpy_7.81/wimpy.buttons/WimpyButton_7781455.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
-<script>
-var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = "wimpy_7.81/wimpy.js";
-head.appendChild(script);
-</script>
-<style type="text/css">
-.cell {
-	display : table-cell;
-	position : relative;
-	float: left;
-	width : 250px;
-	height : 75px;
-	margin : 1px;
-	padding : 20px;
-	text-align : center;
-	vertical-align : middle;
-	background-color: #00;
-}
-.dark {
-	background-color: #ee1111;
-}
-</style>
-<!-- stylesheet --> 
+ <style>
+      p { clear: both; }
 
-<!-- Scripts --> 
-<script src="wimpy_7.81/wimpy.js" type="text/javascript"></script>
-<!-- Scripts --> 
+      .audiojs { height: 22px; background: #404040;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); }
+      .audiojs .play-pause { width: 15px; height: 20px; padding: 0px 8px 0px 0px; }
+      .audiojs p { width: 25px; height: 20px; margin: -3px 0px 0px -1px; }
+      .audiojs .scrubber { background: #5a5a5a; width: 310px; height: 10px; margin: 5px; }
+      .audiojs .progress { height: 10px; width: 0px; background: #ccc;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0.5, #ddd), color-stop(0.51, #ccc), color-stop(1, #ccc));
+        background-image: -moz-linear-gradient(center top, #ccc 0%, #ddd 50%, #ccc 51%, #ccc 100%); }
+      .audiojs .loaded { height: 10px; background: #000;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222));
+        background-image: -moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%); }
+      .audiojs .time { float: left; height: 25px; line-height: 25px; }
+      .audiojs .error-message { height: 24px;line-height: 24px; }
 
+      .track-details { clear: both; height: 20px; width: 448px; padding: 1px 6px; background: #eee; color: #222; font-family: monospace; font-size: 11px; line-height: 20px;
+        -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15); }
+      .track-details:before { content: '♬ '; }
+      .track-details em { font-style: normal; color: #999; }
+    </style>
 </head>
 
 <body>
+
 <div id="preloader">
   <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
 </div>
@@ -87,14 +82,23 @@ head.appendChild(script);
      <br/><br/><br/><br/><br/>
      <p>.</p>
     <div class="social"> <a href="http://www.kembolle.com.br"><i class="fa fa-home"></i></a><a href="https://github.com/Kembolle"><i class="fa fa-github"></i></a> <a href="https://api.whatsapp.com/send?phone=5565981120888&text=Ol%C3%A1,kembolle."><i class="fa fa-whatsapp"></i></a> <a href="tel:+5565981120888"><i class="fa fa-mobile"></i></a>  <a href="mailto:contato@kembolle.com.br?Subject=Olá%20Kembolle"><i class="fa fa-envelope-o"></i></a><a href="https://soundcloud.com/kembolle-amilkar"><i class="fa fa-soundcloud"></i></a><a href="http://lumedivinum.com.br/"><i class="fa fa-fire"></i></a> <a href="https://mba.fatecsenai.com.br/"><i class="fa fa-graduation-cap"></i></a></div> 
-<div class="copyright">Copyright &copy; <a href="http://www.kembolle.com.br" rel="nofollow">Kembolle Amilkar</a> | Happy Hacking since 1991 - 2020  ;-) | [ <div class="WimpyButton_7781455" data-wimpybutton="music/ajna-follow-the-signs.mp3?justMakingUnique9" title="Play the Hacking Sound Modaf*ker :P "></div> ] </div> 
+<div class="copyright">Copyright &copy; <a href="http://www.kembolle.com.br" rel="nofollow">Kembolle Amilkar</a> | Happy Hacking since 1991 - 2020  ;-) <audio src="music/ajna-follow-the-signs.mp3" preload="auto"/>
   </div> 
 </div>
+
+
+
 
 <!-- Javascript --> 
 <script src="js/jquery.1.11.1.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.countdown.js"></script> 
 <script src="js/custom.js"></script>
+<script src="audiojs/audiojs/audio.min.js"></script>
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
 </body>
 </html>
