@@ -1,0 +1,13 @@
+/*------ Button: WimpyButton_7780954---------*/
+
+.WimpyButton_7780954 {position:relative;display:inline-block;vertical-align:middle;;overflow:hidden;padding:0px;margin:0px;border:0px;font-size:13.807500000000001px;background:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:padding-box;-webkit-box-sizing:padding-box;   -moz-box-sizing:padding-box;    -ms-box-sizing:padding-box;     -o-box-sizing:padding-box;user-select:none;-webkit-user-select:none;   -moz-user-select:none;    -ms-user-select:none;     -o-user-select:none;-moz-user-select:-moz-none;cursor:inherit;left:0px;top:0px;height:25px;width:66px;border-radius:232px;-webkit-border-radius:232px;   -moz-border-radius:232px;    -ms-border-radius:232px;     -o-border-radius:232px;background-color:#8d8d8d;background-image:none;border-style:solid;border-width:2px;border-color:rgba(170,170,170,0.89312);margin-left:-2px;margin-top:-2px;box-shadow:none;-webkit-box-shadow:none;   -moz-box-shadow:none;    -ms-box-shadow:none;     -o-box-shadow:none;white-space:nowrap;line-height:1.7474787190172907em;color:#eeeeee;font-family:Arial, Helvetica, sans-serif;text-align:center;font-weight:normal;text-shadow:none;-webkit-text-shadow:none;   -moz-text-shadow:none;    -ms-text-shadow:none;     -o-text-shadow:none;font-smooth:always;-webkit-font-smoothing:antialiased;text-decoration:none;zoom:1;size:18;z-index:34;background-clip:padding-box;-webkit-background-clip:padding-box;   -moz-background-clip:padding-box;    -ms-background-clip:padding-box;     -o-background-clip:padding-box;}
+.WimpyButton_7780954:active {border-radius:216px;-webkit-border-radius:216px;   -moz-border-radius:216px;    -ms-border-radius:216px;     -o-border-radius:216px;background-color:#3f8ed5;border-width:1px;border-color:rgba(115,115,115,0.89312);margin-left:-1px;margin-top:-1px;color:#fefefe;}
+.WimpyButton_7780954.play:before {
+	content : "Play";
+}
+.WimpyButton_7780954.pause:before {
+	content : "Pause";
+}
+.WimpyButton_7780954.loading:before {
+	content : "Load";
+}

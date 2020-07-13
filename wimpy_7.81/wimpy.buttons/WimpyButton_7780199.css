@@ -1,0 +1,13 @@
+/*------ Button: WimpyButton_7780199---------*/
+
+.WimpyButton_7780199 {position:relative;display:inline-block;vertical-align:middle;;overflow:hidden;padding:0px;margin:0px;border:0px;font-size:17px;background:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:padding-box;-webkit-box-sizing:padding-box;   -moz-box-sizing:padding-box;    -ms-box-sizing:padding-box;     -o-box-sizing:padding-box;user-select:none;-webkit-user-select:none;   -moz-user-select:none;    -ms-user-select:none;     -o-user-select:none;-moz-user-select:-moz-none;cursor:inherit;left:-0.75px;top:-0.375px;height:17px;width:20px;background-image:none;box-shadow:none;-webkit-box-shadow:none;   -moz-box-shadow:none;    -ms-box-shadow:none;     -o-box-shadow:none;white-space:nowrap;line-height:1em;color:#2b2b2b;font-family:WimpyPlayerGlyphs;text-align:center;font-weight:normal;text-shadow:none;-webkit-text-shadow:none;   -moz-text-shadow:none;    -ms-text-shadow:none;     -o-text-shadow:none;font-smooth:always;-webkit-font-smoothing:antialiased;text-decoration:none;zoom:1;size:17;z-index:25;background-clip:padding-box;-webkit-background-clip:padding-box;   -moz-background-clip:padding-box;    -ms-background-clip:padding-box;     -o-background-clip:padding-box;}
+.WimpyButton_7780199:active {color:#f6f6f6;text-shadow:0px 0px 5.7176px #000;-webkit-text-shadow:0px 0px 5.7176px #000;   -moz-text-shadow:0px 0px 5.7176px #000;    -ms-text-shadow:0px 0px 5.7176px #000;     -o-text-shadow:0px 0px 5.7176px #000;}
+.WimpyButton_7780199.play:before {
+	content : "p";
+}
+.WimpyButton_7780199.pause:before {
+	content : "q";
+}
+.WimpyButton_7780199.loading:before {
+	content : "t";
+}

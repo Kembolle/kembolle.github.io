@@ -1,0 +1,13 @@
+/*------ Button: WimpyButton_7780175---------*/
+
+.WimpyButton_7780175 {position:relative;display:inline-block;vertical-align:middle;;overflow:hidden;padding:0px;margin:0px;border:0px;font-size:24px;background:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:padding-box;-webkit-box-sizing:padding-box;   -moz-box-sizing:padding-box;    -ms-box-sizing:padding-box;     -o-box-sizing:padding-box;user-select:none;-webkit-user-select:none;   -moz-user-select:none;    -ms-user-select:none;     -o-user-select:none;-moz-user-select:-moz-none;cursor:inherit;left:-0.6000000000000014px;top:-0.875px;height:24px;width:24px;background-image:none;box-shadow:none;-webkit-box-shadow:none;   -moz-box-shadow:none;    -ms-box-shadow:none;     -o-box-shadow:none;white-space:nowrap;line-height:1em;color:#fdfcfc;font-family:WimpyPlayerGlyphs;text-align:center;font-weight:normal;text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);-webkit-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);   -moz-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);    -ms-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);     -o-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);font-smooth:always;-webkit-font-smoothing:antialiased;text-decoration:none;zoom:1;size:24;z-index:13;background-clip:padding-box;-webkit-background-clip:padding-box;   -moz-background-clip:padding-box;    -ms-background-clip:padding-box;     -o-background-clip:padding-box;}
+.WimpyButton_7780175:active {color:#fff;text-shadow:-0.256px 0.256px 11.167px rgba(255,255,255,0.97908);-webkit-text-shadow:-0.256px 0.256px 11.167px rgba(255,255,255,0.97908);   -moz-text-shadow:-0.256px 0.256px 11.167px rgba(255,255,255,0.97908);    -ms-text-shadow:-0.256px 0.256px 11.167px rgba(255,255,255,0.97908);     -o-text-shadow:-0.256px 0.256px 11.167px rgba(255,255,255,0.97908);}
+.WimpyButton_7780175.play:before {
+	content : "p";
+}
+.WimpyButton_7780175.pause:before {
+	content : "q";
+}
+.WimpyButton_7780175.loading:before {
+	content : "t";
+}

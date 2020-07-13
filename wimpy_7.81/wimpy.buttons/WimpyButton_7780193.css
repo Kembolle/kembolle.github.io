@@ -1,0 +1,13 @@
+/*------ Button: WimpyButton_7780193---------*/
+
+.WimpyButton_7780193 {position:relative;display:inline-block;vertical-align:middle;;overflow:hidden;padding:0px;margin:0px;border:0px;font-size:25.7072px;background:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:padding-box;-webkit-box-sizing:padding-box;   -moz-box-sizing:padding-box;    -ms-box-sizing:padding-box;     -o-box-sizing:padding-box;user-select:none;-webkit-user-select:none;   -moz-user-select:none;    -ms-user-select:none;     -o-user-select:none;-moz-user-select:-moz-none;cursor:inherit;left:-0.5999999999999943px;top:-0.875px;height:32px;width:32px;background-image:none;box-shadow:none;-webkit-box-shadow:none;   -moz-box-shadow:none;    -ms-box-shadow:none;     -o-box-shadow:none;white-space:nowrap;line-height:1.2447874525424785em;color:#626262;font-family:WimpyPlayerGlyphs;text-align:center;font-weight:normal;text-shadow:-0.08px 0.24px 0px rgba(255,255,255,0.54355);-webkit-text-shadow:-0.08px 0.24px 0px rgba(255,255,255,0.54355);   -moz-text-shadow:-0.08px 0.24px 0px rgba(255,255,255,0.54355);    -ms-text-shadow:-0.08px 0.24px 0px rgba(255,255,255,0.54355);     -o-text-shadow:-0.08px 0.24px 0px rgba(255,255,255,0.54355);font-smooth:always;-webkit-font-smoothing:antialiased;text-decoration:none;zoom:1;size:32;z-index:7;background-clip:padding-box;-webkit-background-clip:padding-box;   -moz-background-clip:padding-box;    -ms-background-clip:padding-box;     -o-background-clip:padding-box;}
+.WimpyButton_7780193:active {color:#2e9bfb;text-shadow:0.16px 0.48px 0px rgba(255,255,255,0.66963),-0.16px -0.48px 0px rgba(0,0,0,0.49771);-webkit-text-shadow:0.16px 0.48px 0px rgba(255,255,255,0.66963),-0.16px -0.48px 0px rgba(0,0,0,0.49771);   -moz-text-shadow:0.16px 0.48px 0px rgba(255,255,255,0.66963),-0.16px -0.48px 0px rgba(0,0,0,0.49771);    -ms-text-shadow:0.16px 0.48px 0px rgba(255,255,255,0.66963),-0.16px -0.48px 0px rgba(0,0,0,0.49771);     -o-text-shadow:0.16px 0.48px 0px rgba(255,255,255,0.66963),-0.16px -0.48px 0px rgba(0,0,0,0.49771);}
+.WimpyButton_7780193.play:before {
+	content : "p";
+}
+.WimpyButton_7780193.pause:before {
+	content : "q";
+}
+.WimpyButton_7780193.loading:before {
+	content : "t";
+}

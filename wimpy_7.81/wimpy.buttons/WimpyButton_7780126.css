@@ -1,0 +1,13 @@
+/*------ Button: WimpyButton_7780126---------*/
+
+.WimpyButton_7780126 {position:relative;display:inline-block;vertical-align:middle;;overflow:hidden;padding:0px;margin:0px;border:0px;font-size:13.65696px;background:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:padding-box;-webkit-box-sizing:padding-box;   -moz-box-sizing:padding-box;    -ms-box-sizing:padding-box;     -o-box-sizing:padding-box;user-select:none;-webkit-user-select:none;   -moz-user-select:none;    -ms-user-select:none;     -o-user-select:none;-moz-user-select:-moz-none;cursor:inherit;left:-0.6000000000000014px;top:-0.4000000000000057px;height:32px;width:32px;border-radius:116.0488px;-webkit-border-radius:116.0488px;   -moz-border-radius:116.0488px;    -ms-border-radius:116.0488px;     -o-border-radius:116.0488px;background-color:#5e5b5b;background-image:none;border-style:solid;border-width:1px;border-color:#000;margin-left:-1px;margin-top:-1px;box-shadow:inset -0.128px 1.6px 2.1074px rgba(248,252,255,0.55501);-webkit-box-shadow:inset -0.128px 1.6px 2.1074px rgba(248,252,255,0.55501);   -moz-box-shadow:inset -0.128px 1.6px 2.1074px rgba(248,252,255,0.55501);    -ms-box-shadow:inset -0.128px 1.6px 2.1074px rgba(248,252,255,0.55501);     -o-box-shadow:inset -0.128px 1.6px 2.1074px rgba(248,252,255,0.55501);white-space:nowrap;line-height:2.3431276067294626em;color:#fdfcfc;font-family:WimpyPlayerGlyphs;text-align:center;font-weight:normal;text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);-webkit-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);   -moz-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);    -ms-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);     -o-text-shadow:-0.256px 0.256px 5.408px rgba(0,0,0,0.97908);font-smooth:always;-webkit-font-smoothing:antialiased;text-decoration:none;zoom:1;size:32;z-index:10;background-clip:padding-box;-webkit-background-clip:padding-box;   -moz-background-clip:padding-box;    -ms-background-clip:padding-box;     -o-background-clip:padding-box;}
+.WimpyButton_7780126:active {background-color:#4f4f4f;box-shadow:inset 0.64px 1.728px 10.039px rgba(13,13,13,0.78997);-webkit-box-shadow:inset 0.64px 1.728px 10.039px rgba(13,13,13,0.78997);   -moz-box-shadow:inset 0.64px 1.728px 10.039px rgba(13,13,13,0.78997);    -ms-box-shadow:inset 0.64px 1.728px 10.039px rgba(13,13,13,0.78997);     -o-box-shadow:inset 0.64px 1.728px 10.039px rgba(13,13,13,0.78997);}
+.WimpyButton_7780126.play:before {
+	content : "p";
+}
+.WimpyButton_7780126.pause:before {
+	content : "q";
+}
+.WimpyButton_7780126.loading:before {
+	content : "t";
+}
