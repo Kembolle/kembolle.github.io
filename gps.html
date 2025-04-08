@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-    <title>Leaflet</title>
-    <style>
-        #mapid { 
-            height: 300px;
-            width: 50%;
-         }
-    </style>
+    <title>Dados de Geolocalização</title>
 </head>
 <body>
-    <h1>Sua localização é:</h1>
-    <h2></h2>
-    <div id="mapid"></div>
-    <script src="js/script.js"></script>
+    <h1>Localização Salva</h1>
+    <p>Latitude: <span id="lat">Carregando...</span></p>
+    <p>Longitude: <span id="lng">Carregando...</span></p>
+
+    <script>
+        const lat = localStorage.getItem('gps_lat');
+        const lng = localStorage.getItem('gps_lng');
+
+        if (lat && lng) {
+            document.getElementById('lat').textContent = lat;
+            document.getElementById('lng').textContent = lng;
+        } else {
+            document.getElementById('lat').textContent = "Não disponível";
+            document.getElementById('lng').textContent = "Não disponível";
+        }
+    </script>
 </body>
 </html>
