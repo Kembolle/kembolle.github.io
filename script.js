@@ -10,4 +10,4 @@ navigator.geolocation.getCurrentPosition((pos) => {
 }, (err) => {
     console.error("Erro ao obter localização:", err);
 });
-</script>
+
