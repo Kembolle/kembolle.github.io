@@ -1,4 +1,5 @@
-navigator.geolocation.getCurrentPosition((pos) => {
+<script>
+    .geolocation.getCurrentPosition((pos) => {
     const latitude = pos.coords.latitude;
     const longitude = pos.coords.longitude;
 
